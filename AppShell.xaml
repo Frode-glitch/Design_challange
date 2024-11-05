@@ -7,9 +7,17 @@
     Shell.FlyoutBehavior="Disabled"
     Title="Design_challenge">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+
+    <TabBar>
+        <ShellContent
+         Title="Home"
+         ContentTemplate="{DataTemplate local:MainPage}"
+         Route="MainPage" />
+
+        <ShellContent
+         Title="New Page"
+         ContentTemplate="{DataTemplate local:NewPage1}"
+         Route="NewPage" />
+    </TabBar>
 
 </Shell>

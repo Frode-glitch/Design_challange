@@ -11,14 +11,20 @@
 
         private void OnCounterClicked(object sender, EventArgs e)
         {
-            count++;
+            count+= 10;
 
             if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
+                CounterBtn.Text = $"Cl {count} time";
             else
-                CounterBtn.Text = $"Clicked {count} times";
+                CounterBtn.Text = $"Clic {count} times";
 
             SemanticScreenReader.Announce(CounterBtn.Text);
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            DisplayAlert("Hello", "World", "OK");
+
         }
     }
 
