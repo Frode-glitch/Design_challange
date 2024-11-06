@@ -4,12 +4,38 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Design_challenge"
+    xmlns:pages="clr-namespace:Design_challenge.Views"
     Shell.FlyoutBehavior="Disabled"
     Title="Design_challenge">
 
     <ShellContent
+<<<<<<< Updated upstream
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+=======
+         Title="Loading"    
+         ContentTemplate="{DataTemplate pages:LoadingView}"
+         Route="LoadingView" />
+    
+    <ShellContent
+         Title="Login"
+         ContentTemplate="{DataTemplate pages:LoginView}"
+         Route="LoginView" />
 
+    <ShellContent
+         Title="Home"
+         ContentTemplate="{DataTemplate local:MainPage}"
+         Route="MainPage" />
+
+    <ShellContent
+         Title="Listing"
+         ContentTemplate="{DataTemplate pages:ListingView}"
+         Route="ListingView" />
+>>>>>>> Stashed changes
+
+    <ShellContent
+         Title="Profile"
+         ContentTemplate="{DataTemplate pages:ProfileView}"
+         Route="ProfileView" />
 </Shell>

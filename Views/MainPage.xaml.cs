@@ -20,6 +20,15 @@
 
             SemanticScreenReader.Announce(CounterBtn.Text);
         }
+<<<<<<< Updated upstream:MainPage.xaml.cs
+=======
+
+        private async void Button_Clicked(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync("NewPage");
+
+        }
+>>>>>>> Stashed changes:Views/MainPage.xaml.cs
     }
 
 }
