@@ -62,8 +62,6 @@
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
 	</ItemGroup>
 
-<<<<<<< Updated upstream
-=======
 	<ItemGroup>
 	  <MauiXaml Update="Views\CreateAccountView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
@@ -82,5 +80,4 @@
 	  </MauiXaml>
 	</ItemGroup>
 
->>>>>>> Stashed changes
 </Project>

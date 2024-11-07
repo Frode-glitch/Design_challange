@@ -9,11 +9,6 @@
     Title="Design_challenge">
 
     <ShellContent
-<<<<<<< Updated upstream
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-=======
          Title="Loading"    
          ContentTemplate="{DataTemplate pages:LoadingView}"
          Route="LoadingView" />
@@ -32,7 +27,6 @@
          Title="Listing"
          ContentTemplate="{DataTemplate pages:ListingView}"
          Route="ListingView" />
->>>>>>> Stashed changes
 
     <ShellContent
          Title="Profile"
