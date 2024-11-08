@@ -3,10 +3,16 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Design_challenge.Views.ProfileView"
              Title="ProfileView">
-    <VerticalStackLayout>
+    <VerticalStackLayout
+        Padding="25"
+        Spacing="25">
         <Label 
             Text="Profile View"
             VerticalOptions="Center" 
             HorizontalOptions="Center" />
+
+        <Button 
+            Text="Uitloggen"
+            Clicked="Button_Clicked" />
     </VerticalStackLayout>
 </ContentPage>

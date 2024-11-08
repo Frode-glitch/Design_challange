@@ -18,6 +18,7 @@ namespace Design_challenge
                     fonts.AddFont("Futura-Bold-font.ttf", "bold");
                     fonts.AddFont("Futura-medium-bt.ttf", "medium");
                     fonts.AddFont("FontAwesomeSolid.otf", "AwesomeSolid");
+                    fonts.AddFont("Baloo2-Medium.ttf", "Baloo2");
                 });
 
 #if DEBUG
@@ -25,6 +26,8 @@ namespace Design_challenge
 #endif
             builder.Services.AddTransient<AuthService>();
             builder.Services.AddTransient<LoadingView>();
+            builder.Services.AddTransient<LoginView>();
+            builder.Services.AddTransient<ProfileView>();
 
             return builder.Build();
         }

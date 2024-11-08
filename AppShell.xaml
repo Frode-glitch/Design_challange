@@ -5,31 +5,42 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Design_challenge"
     xmlns:pages="clr-namespace:Design_challenge.Views"
-    Shell.FlyoutBehavior="Disabled"
+    Shell.FlyoutBehavior="Flyout"
     Title="Design_challenge">
+
+    
 
     <ShellContent
          Title="Loading"    
          ContentTemplate="{DataTemplate pages:LoadingView}"
-         Route="LoadingView" />
+         Route="LoadingView"
+         Shell.FlyoutItemIsVisible="False"/>
     
     <ShellContent
          Title="Login"
          ContentTemplate="{DataTemplate pages:LoginView}"
-         Route="LoginView" />
+         Route="LoginView" 
+         Shell.FlyoutBehavior="Disabled"
+         Shell.FlyoutItemIsVisible="False"/>
 
-    <ShellContent
-         Title="Home"
+
+    <TabBar>
+        <ShellContent
+         Icon="homeicon.png"
          ContentTemplate="{DataTemplate local:MainPage}"
-         Route="MainPage" />
+         Route="MainPage"
+         Shell.FlyoutBehavior="Disabled"/>
 
-    <ShellContent
-         Title="Listing"
+        <ShellContent
+         Icon="dealsicon.png"
          ContentTemplate="{DataTemplate pages:ListingView}"
-         Route="ListingView" />
+         Route="ListingView" 
+         Shell.FlyoutBehavior="Disabled"/>
 
-    <ShellContent
-         Title="Profile"
+        <ShellContent
+         Icon="settingsicon.png"
          ContentTemplate="{DataTemplate pages:ProfileView}"
-         Route="ProfileView" />
+         Route="ProfileView"
+         Shell.FlyoutBehavior="Disabled"/>
+    </TabBar>
 </Shell>

@@ -20,13 +20,13 @@ public partial class LoadingView : ContentPage
         {
             //gebruiker is ingelogd
             //redirecten naar mainpage
-            await Shell.Current.GoToAsync($"{nameof(MainPage)}");
+            await Shell.Current.GoToAsync($"//{nameof(MainPage)}");
         }
         else
         {
             //gebruiker is niet ingelogd
             //redirecten naar loginview
-            await Shell.Current.GoToAsync($"{nameof(LoginView)}");
+            await Shell.Current.GoToAsync($"//{nameof(LoginView)}");
         }
     }
 }
