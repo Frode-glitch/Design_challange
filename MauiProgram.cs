@@ -19,6 +19,7 @@ namespace Design_challenge
                     fonts.AddFont("Futura-medium-bt.ttf", "medium");
                     fonts.AddFont("FontAwesomeSolid.otf", "AwesomeSolid");
                     fonts.AddFont("Baloo2-Medium.ttf", "Baloo2");
+                    fonts.AddFont("Baloo-Regular.ttf", "Baloo");
                 });
 
 #if DEBUG
