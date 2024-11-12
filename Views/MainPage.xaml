@@ -7,24 +7,19 @@
     <Grid RowDefinitions=".1*, .9*">
 
         <!-- Deze kan bijvoorbeeld een header bevatten in de eerste rij -->
-        <Label Text="Header"
+        <Label Text="Home"
                Grid.Row="0"
-               HorizontalOptions="Center"
+               Margin="10, 0, 0, 0"
+               HorizontalOptions="Start"
                VerticalOptions="Center"
                FontSize="Large"
+               FontFamily="Baloo"
                FontAttributes="Bold"
                TextColor="Black"/>
 
         <!-- CollectionView in de tweede rij -->
-        <CollectionView Grid.Row="1">
-            <CollectionView.ItemsSource>
-                <x:Array Type="{x:Type x:String}">
-                    <x:String>punten</x:String>
-                    <x:String>Deal 1</x:String>
-                    <x:String>Deal 2</x:String>
-                    <x:String>Deal 3</x:String>
-                </x:Array>
-            </CollectionView.ItemsSource>
+        <CollectionView ItemsSource="{Binding UniqueDeals}" Grid.Row="1">
+            
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout ItemSpacing="15" Orientation="Vertical" />
             </CollectionView.ItemsLayout>
@@ -47,7 +42,7 @@
                                 Grid.RowSpan="2"
                                 Grid.ColumnSpan="3"
                                 Aspect="AspectFill"
-                                Source="deal1.png" />
+                                Source="{Binding Header}" />
                         </Grid>
                         <Grid Grid.Row="1" Margin="0, 0, 0, 0"
                               Padding="10" RowDefinitions="*, *">
@@ -56,11 +51,11 @@
                                    FontAttributes="Bold"
                                    FontSize="Large"
                                    HorizontalTextAlignment="Center"
-                                   Text="{Binding .}"
+                                   Text="{Binding Name}"
                                    TextColor="Black" />
                             <Label Grid.Row="1"      
                                    FontFamily="Baloo2"
-                                   Text="Komend weekend tot wel 40% korting op LG TV's"/>
+                                   Text="{Binding Description}"/>
                         </Grid>
                     </Grid>
                 </DataTemplate>
