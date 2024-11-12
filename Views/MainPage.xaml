@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Design_challenge.MainPage" >
 
-
     <Grid RowDefinitions=".1*, .9*">
 
         <!-- Deze kan bijvoorbeeld een header bevatten in de eerste rij -->
@@ -19,7 +18,7 @@
 
         <!-- CollectionView in de tweede rij -->
         <CollectionView ItemsSource="{Binding UniqueDeals}" Grid.Row="1">
-            
+
             <CollectionView.ItemsLayout>
                 <LinearItemsLayout ItemSpacing="15" Orientation="Vertical" />
             </CollectionView.ItemsLayout>
@@ -55,12 +54,12 @@
                                    TextColor="Black" />
                             <Label Grid.Row="1"      
                                    FontFamily="Baloo2"
-                                   Text="{Binding Description}"/>
+                                   Text="{Binding Description}"
+                                   HorizontalTextAlignment="Center"/>
                         </Grid>
                     </Grid>
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-
     </Grid>
 </ContentPage>
