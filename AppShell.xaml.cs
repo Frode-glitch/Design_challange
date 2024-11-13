@@ -13,7 +13,8 @@ namespace Design_challenge
             Routing.RegisterRoute(nameof(LoginView), typeof(LoginView));
             Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
             Routing.RegisterRoute(nameof(ProfileView), typeof(ProfileView));
-
+            Routing.RegisterRoute(nameof(AccountView), typeof(AccountView));
+            Routing.RegisterRoute(nameof(Deal1View), typeof(Deal1View));
         }
     }
 }

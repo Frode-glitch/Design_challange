@@ -5,7 +5,7 @@
 
     <Grid RowDefinitions=".1*, .9*">
 
-        <!-- Deze kan bijvoorbeeld een header bevatten in de eerste rij -->
+
         <Label Text="Home"
                Grid.Row="0"
                Margin="10, 0, 0, 0"
@@ -16,7 +16,7 @@
                FontAttributes="Bold"
                TextColor="Black"/>
 
-        <!-- CollectionView in de tweede rij -->
+
         <CollectionView ItemsSource="{Binding UniqueDeals}" Grid.Row="1">
 
             <CollectionView.ItemsLayout>
@@ -35,7 +35,8 @@
                                         Offset="10, 10"/>
                             </RoundRectangle.Shadow>
                         </RoundRectangle>
-                        <Grid ColumnDefinitions=".4*, .2*, .4*"
+                        <Grid 
+                              ColumnDefinitions=".4*, .2*, .4*"
                               RowDefinitions=".6*, .4*">
                             <Image 
                                 Grid.RowSpan="2"
@@ -43,16 +44,19 @@
                                 Aspect="AspectFill"
                                 Source="{Binding Header}" />
                         </Grid>
-                        <Grid Grid.Row="1" Margin="0, 0, 0, 0"
+                        <Grid 
+                              Grid.Row="1" Margin="0, 0, 0, 0"
                               Padding="10" RowDefinitions="*, *">
-                            <Label Grid.ColumnSpan="3"
+                            <Label 
+                                   Grid.ColumnSpan="3"
                                    FontFamily="Baloo"
                                    FontAttributes="Bold"
                                    FontSize="Large"
                                    HorizontalTextAlignment="Center"
                                    Text="{Binding Name}"
                                    TextColor="Black" />
-                            <Label Grid.Row="1"      
+                            <Label 
+                                   Grid.Row="1"      
                                    FontFamily="Baloo2"
                                    Text="{Binding Description}"
                                    HorizontalTextAlignment="Center"/>

@@ -1,18 +1,37 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Design_challenge.Views.ProfileView"
-             Title="ProfileView">
-    <VerticalStackLayout
-        Padding="25"
-        Spacing="25">
+             x:Class="Design_challenge.Views.ProfileView">
+    
+    <VerticalStackLayout>
         <Label 
-            Text="Profile View"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            Text="Settings"
+            Margin="10, 20, 0, 0"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            FontSize="Large"
+            FontFamily="Baloo"
+            FontAttributes="Bold"
+            TextColor="Black"/>
+
+        <Button
+            Margin="-35, 10, -35, 0"
+            Text="Profile"
+            HeightRequest="60"
+            TextColor="Black"
+            BackgroundColor="White"
+            BorderColor="Black"
+            BorderWidth=".4"
+            Clicked="Button_Clicked_1"/>
 
         <Button 
-            Text="Uitloggen"
+            Margin="-35, 0, -35, 10"
+            Text="Log Out"
+            HeightRequest="60"
+            BackgroundColor="White"
+            BorderColor="Black"
+            BorderWidth=".4"
+            TextColor="Black"
             Clicked="Button_Clicked" />
     </VerticalStackLayout>
 </ContentPage>

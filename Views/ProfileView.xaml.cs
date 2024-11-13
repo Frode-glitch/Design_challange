@@ -17,4 +17,9 @@ public partial class ProfileView : ContentPage
         _authService.Logout();
         Shell.Current.GoToAsync($"//{nameof(LoginView)}");
     }
+
+    private void Button_Clicked_1(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync("AccountView");
+    }
 }

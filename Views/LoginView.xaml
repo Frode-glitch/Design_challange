@@ -32,7 +32,7 @@
                        FontFamily="Baloo2"/>
 
                 <Entry Margin="20, 0, 20, 0"
-                       Placeholder="Wachtwoord"
+                       Placeholder="Password"
                        IsPassword="True"
                        VerticalOptions="Center"
                        FontFamily="Baloo2"/>

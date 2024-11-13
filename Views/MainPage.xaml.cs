@@ -2,6 +2,7 @@
 
 namespace Design_challenge
 {
+  
     public partial class MainPage : ContentPage
     {
 

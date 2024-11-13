@@ -1,9 +1,13 @@
-namespace Design_challenge.Views;
+using Design_challenge.ViewModels;
 
-public partial class ListingView : ContentPage
+namespace Design_challenge.Views
 {
-	public ListingView()
-	{
-		InitializeComponent();
-	}
+    public partial class ListingView : ContentPage
+    {
+        public ListingView(DealsViewViewModel dealsViewViewModel)
+        {
+            InitializeComponent();
+            BindingContext = dealsViewViewModel;  // Dit wijst naar de juiste ViewModel
+        }
+    }
 }
