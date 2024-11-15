@@ -1,7 +1,7 @@
 ﻿using ObjCRuntime;
 using UIKit;
 
-namespace Design_challenge
+namespace Designchallenge
 {
     public class Program
     {

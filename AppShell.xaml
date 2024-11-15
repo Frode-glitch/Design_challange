@@ -1,46 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Shell
-    x:Class="Design_challenge.AppShell"
+    x:Class="Designchallenge.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Design_challenge"
-    xmlns:pages="clr-namespace:Design_challenge.Views"
-    Shell.FlyoutBehavior="Flyout"
-    Title="Design_challenge">
-
-    
-
+    xmlns:local="clr-namespace:Designchallenge"
+    Title="Designchallenge"   
+    Shell.FlyoutBehavior="Disabled"
+    Shell.FlyoutItemIsVisible="False">
     <ShellContent
-         Title="Loading"    
-         ContentTemplate="{DataTemplate pages:LoadingView}"
-         Route="LoadingView"
-         Shell.FlyoutItemIsVisible="False"/>
-    
+     Icon="homeicon.png"
+     ContentTemplate="{DataTemplate local:LoadingView}"
+     Route="LoadingView"/>
     <ShellContent
-         Title="Login"
-         ContentTemplate="{DataTemplate pages:LoginView}"
-         Route="LoginView" 
-         Shell.FlyoutBehavior="Disabled"
-         Shell.FlyoutItemIsVisible="False"/>
-
+     Icon="homeicon.png"
+     ContentTemplate="{DataTemplate local:LoginView}"
+     Route="LoginView"/>
 
     <TabBar>
         <ShellContent
          Icon="homeicon.png"
          ContentTemplate="{DataTemplate local:MainPage}"
-         Route="MainPage"
-         Shell.FlyoutBehavior="Disabled"/>
+         Route="MainPage"/>
 
         <ShellContent
          Icon="dealsicon.png"
-         ContentTemplate="{DataTemplate pages:ListingView}"
-         Route="ListingView" 
-         Shell.FlyoutBehavior="Disabled"/>
+         ContentTemplate="{DataTemplate local:ListingView}"
+         Route="ListingView">
+            <ShellContent  Route="ListingView/Deal1View"  ContentTemplate="{DataTemplate local:Deal1View}" NavigationPage.HasNavigationBar="False">
+                <ShellContent Route="ListingView/Deal1View/QRCodeDeal1" ContentTemplate="{DataTemplate local:QRCodeDeal1}" NavigationPage.HasNavigationBar="False"/>
+            </ShellContent>
+        </ShellContent>
 
         <ShellContent
          Icon="settingsicon.png"
-         ContentTemplate="{DataTemplate pages:ProfileView}"
-         Route="ProfileView"
-         Shell.FlyoutBehavior="Disabled"/>
+         ContentTemplate="{DataTemplate local:ProfileView}"
+         Route="ProfileView"/>
     </TabBar>
 </Shell>
+

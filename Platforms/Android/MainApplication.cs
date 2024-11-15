@@ -1,7 +1,7 @@
 ﻿using Android.App;
 using Android.Runtime;
 
-namespace Design_challenge
+namespace Designchallenge
 {
     [Application]
     public class MainApplication : MauiApplication

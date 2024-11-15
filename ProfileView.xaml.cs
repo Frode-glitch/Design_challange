@@ -1,20 +1,16 @@
-using Design_challenge.Services;
-
-namespace Design_challenge.Views;
+namespace Designchallenge;
 
 public partial class ProfileView : ContentPage
 {
-    private readonly AuthService _authService;
+   // private readonly AuthService _authService;
 
-    public ProfileView(AuthService authService)
+    public ProfileView()
 	{
 		InitializeComponent();
-        _authService = authService;
     }
 
     private void Button_Clicked(object sender, EventArgs e)
     {
-        _authService.Logout();
         Shell.Current.GoToAsync($"//{nameof(LoginView)}");
     }
 

@@ -14,17 +14,17 @@
 		<!-- For example: <RuntimeIdentifiers>maccatalyst-x64;maccatalyst-arm64</RuntimeIdentifiers> -->
 
 		<OutputType>Exe</OutputType>
-		<RootNamespace>Design_challenge</RootNamespace>
+		<RootNamespace>Designchallenge</RootNamespace>
 		<UseMaui>true</UseMaui>
 		<SingleProject>true</SingleProject>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 
-		<!-- Display name -->	
-		<ApplicationTitle>Design_challenge</ApplicationTitle>
+		<!-- Display name -->
+		<ApplicationTitle>Designchallenge</ApplicationTitle>
 
 		<!-- App Identifier -->
-		<ApplicationId>com.companyname.design_challenge</ApplicationId>
+		<ApplicationId>com.companyname.designchallenge</ApplicationId>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -57,39 +57,53 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.3.2" />
+	  <None Remove="Resources\Fonts\Baloo-Regular.ttf" />
+	  <None Remove="Resources\Fonts\Baloo2-Medium.ttf" />
+	  <None Remove="Resources\Fonts\FontAwesomeSolid.otf" />
+	  <None Remove="Resources\Fonts\Futura-Bold-font.ttf" />
+	  <None Remove="Resources\Fonts\Futura-medium-bt.ttf" />
+	  <None Remove="Resources\Images\deal1.png" />
+	  <None Remove="Resources\Images\deal2.png" />
+	  <None Remove="Resources\Images\deal3.png" />
+	  <None Remove="Resources\Images\dealsicon.png" />
+	  <None Remove="Resources\Images\deal_cola.png" />
+	  <None Remove="Resources\Images\homeicon.png" />
+	  <None Remove="Resources\Images\kerstpakket_doos.png" />
+	  <None Remove="Resources\Images\laadlogo.png" />
+	  <None Remove="Resources\Images\logo.png" />
+	  <None Remove="Resources\Images\logo_parkpoint.png" />
+	  <None Remove="Resources\Images\settingsicon.png" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Maui.Controls.Compatibility" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="8.0.0" />
-		<PackageReference Include="MySql.Data" Version="9.1.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <Compile Update="Views\ListingView.xaml.cs">
-	    <DependentUpon>ListingView.xaml</DependentUpon>
-	  </Compile>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <MauiXaml Update="Views\AccountView.xaml">
+	  <MauiXaml Update="AccountView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\CreateAccountView.xaml">
+	  <MauiXaml Update="CreateAccountView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\Deal1View.xaml">
+	  <MauiXaml Update="Deal1View.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\ListingView.xaml">
+	  <MauiXaml Update="ListingView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\LoadingView.xaml">
+	  <MauiXaml Update="LoadingView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\LoginView.xaml">
+	  <MauiXaml Update="LoginView.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Views\ProfileView.xaml">
+	  <MauiXaml Update="ProfileView.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="QRCodeDeal1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

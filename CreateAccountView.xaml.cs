@@ -1,4 +1,4 @@
-namespace Design_challenge.Views;
+namespace Designchallenge;
 
 public partial class CreateAccountView : ContentPage
 {

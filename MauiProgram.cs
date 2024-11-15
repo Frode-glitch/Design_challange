@@ -1,11 +1,7 @@
-﻿using Design_challenge.Models;
-using Design_challenge.Services;
-using Design_challenge.ViewModels;
-using Design_challenge.Views;
+﻿using Designchallenge.Services;
 using Microsoft.Extensions.Logging;
-using MySql.Data.MySqlClient;
 
-namespace Design_challenge
+namespace Designchallenge
 {
     public static class MauiProgram
     {
@@ -25,22 +21,22 @@ namespace Design_challenge
                     fonts.AddFont("Baloo-Regular.ttf", "Baloo");
                 });
 
-            string connectionString = "Server=serveradres;Database=databasenaam;User Id=gebruikersnaam;Password=wachtwoord;";
-
-            builder.Services.AddSingleton<IDatabaseService>(sp => new DatabaseService(connectionString));
+            string connectionString = "Server=127.0.0.1;Database=pointpark2;User Id=admin;Password=admin;";
 
             builder.Services.AddSingleton<ListingView>();
-            builder.Services.AddTransient<DealsViewViewModel>();
+            builder.Services.AddSingleton<AuthService>();
 
 #if DEBUG
             builder.Logging.AddDebug();
 #endif
-            builder.Services.AddTransient<AuthService>();
             builder.Services.AddTransient<LoadingView>();
             builder.Services.AddTransient<LoginView>();
             builder.Services.AddTransient<ProfileView>();
+            builder.Services.AddTransient<Deal1View>();
+            builder.Services.AddTransient<QRCodeDeal1>();
 
             return builder.Build();
         }
     }
 }
+

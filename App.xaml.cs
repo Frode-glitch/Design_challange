@@ -1,4 +1,4 @@
-﻿namespace Design_challenge
+﻿namespace Designchallenge
 {
     public partial class App : Application
     {

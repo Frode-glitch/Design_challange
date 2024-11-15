@@ -1,6 +1,6 @@
 ﻿using Foundation;
 
-namespace Design_challenge
+namespace Designchallenge
 {
     [Register("AppDelegate")]
     public class AppDelegate : MauiUIApplicationDelegate

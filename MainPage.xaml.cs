@@ -1,8 +1,8 @@
-﻿using Design_challenge.Models;
+﻿using Designchallenge.Models;
 
-namespace Design_challenge
+namespace Designchallenge
 {
-  
+
     public partial class MainPage : ContentPage
     {
 

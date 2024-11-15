@@ -10,30 +10,32 @@
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-android|AnyCPU'">
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(TargetPlatformIdentifier)'=='iOS'">
-    <RuntimeIdentifier>ios-arm64</RuntimeIdentifier>
-    <PlatformTarget>arm64</PlatformTarget>
-  </PropertyGroup>
   <ItemGroup>
-    <MauiXaml Update="Views\AccountView.xaml">
+    <MauiXaml Update="AccountView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\CreateAccountView.xaml">
+    <MauiXaml Update="CreateAccountView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\Deal1View.xaml">
+    <MauiXaml Update="Deal1View.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\ListingView.xaml">
+    <MauiXaml Update="ListingView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\LoadingView.xaml">
+    <MauiXaml Update="LoadingView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\LoginView.xaml">
+    <MauiXaml Update="LoginView.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="Views\ProfileView.xaml">
+    <MauiXaml Update="MainPage.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="ProfileView.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
+    <MauiXaml Update="QRCodeDeal1.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
   </ItemGroup>
@@ -42,6 +44,9 @@
       <SubType>Designer</SubType>
     </None>
     <None Update="AppShell.xaml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Update="MainPage.xaml">
       <SubType>Designer</SubType>
     </None>
     <None Update="Platforms\Windows\App.xaml">

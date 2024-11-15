@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Designchallenge.QRCodeDeal1">
+    <Grid RowDefinitions=".25*, .5*, .25*">
+        <Label 
+            Grid.Row="0"
+            Text="Scan mij bij de kassa!"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+        <Image 
+            Grid.Row="1"
+            Source="logo.png" />
+        <Button
+            Grid.Row="2"
+            Text="X" 
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            BackgroundColor="Black"
+            Clicked="BackButton_Clicked"/>
+    </Grid>
+</ContentPage>

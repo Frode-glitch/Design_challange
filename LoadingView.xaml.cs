@@ -1,6 +1,6 @@
-using Design_challenge.Services;
+using Designchallenge.Services;
 
-namespace Design_challenge.Views;
+namespace Designchallenge;
 
 public partial class LoadingView : ContentPage
 {
@@ -16,7 +16,7 @@ public partial class LoadingView : ContentPage
     {
         base.OnNavigatedTo(args);
 
-        if (await _authService.IsAuthetnticatedAsync())
+        if (await _authService.IsAuthenticatedAsync())
         {
             //gebruiker is ingelogd
             //redirecten naar mainpage
