@@ -12,7 +12,7 @@
                FontFamily="Baloo"
                FontAttributes="Bold"
                TextColor="Black"/>
-
+        
         <Grid Padding="20, 20, 20, 0" HeightRequest="250" Grid.Row="1" RowDefinitions=".6*, .4*">
             <RoundRectangle Grid.RowSpan="2"
                             Background="White"
@@ -33,7 +33,7 @@
                        FontAttributes="Bold"
                        FontSize="Large"
                        HorizontalTextAlignment="Center"
-                       Text="Kerstpaket T.W.V $50"
+                       Text="Kerstpakket T.W.V $50"
                        TextColor="Black" />
                 <Button Grid.Row="1"
                         FontFamily="Baloo2"
@@ -44,7 +44,8 @@
             </Grid>
         </Grid>
         <CarouselView
-            Grid.Row="3"
+            Grid.Row="2"
+            Margin="0, 80, 0, 0"
             ItemsSource="{Binding CarouselItems}"
             HeightRequest="300"
             x:Name="carouselView"
@@ -70,5 +71,35 @@
                 </DataTemplate>
             </CarouselView.ItemTemplate>
         </CarouselView>
+        <Grid Padding="20, 20, 20, 0" HeightRequest="250" Grid.Row="3" RowDefinitions=".6*, .4*">
+            <RoundRectangle Grid.RowSpan="2"
+                    Background="White"
+                    CornerRadius="10"
+                    Stroke="Green">
+            </RoundRectangle>
+            <Grid ColumnDefinitions=".4*, .2*, .4*"
+          RowDefinitions=".6*, .4*">
+                <Image Grid.RowSpan="2"
+               Grid.ColumnSpan="3"
+               Aspect="AspectFit"
+               Source="kerstpakket_doos.png" />
+            </Grid>
+            <Grid Grid.Row="1" Margin="0, 0, 0, 0"
+          Padding="10" RowDefinitions="*, *">
+                <Label Grid.ColumnSpan="3"
+               FontFamily="Baloo"
+               FontAttributes="Bold"
+               FontSize="Large"
+               HorizontalTextAlignment="Center"
+               Text="Kerstpakket T.W.V $50"
+               TextColor="Black" />
+                <Button Grid.Row="1"
+                FontFamily="Baloo2"
+                BackgroundColor="Black"
+                TextColor="White"
+                Text="500pt - Go To Deal"
+                Clicked="Button_Clicked"/>
+            </Grid>
+        </Grid>
     </Grid>
 </ContentPage>

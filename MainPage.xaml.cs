@@ -6,7 +6,7 @@ namespace Designchallenge
     public partial class MainPage : ContentPage
     {
 
-        public List<Deals> UniqueDeals {  get; set; }
+        public List<Deal> UniqueDeals {  get; set; }
 
 
         int count = 0;
@@ -20,23 +20,23 @@ namespace Designchallenge
 
         private void LoadData()
         {
-            UniqueDeals = new List<Deals>
+            UniqueDeals = new List<Deal>
     {
-        new Deals
+        new Deal
         {
             Id = 1,
             Header = "deal1.png",
             Name = " ",
             Description = "Parkeerplaatsen vrij: 120"
         },
-        new Deals
+        new Deal
         {
             Id = 2,
             Header = "deal2.png",
             Name = "Korting op TV's van LG",
             Description = "Komend weekend korting tot wel 40% op LG TV's"
         },
-        new Deals
+        new Deal
         {
             Id = 3,
             Header = "deal3.png",

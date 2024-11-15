@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +7,19 @@ using System.Threading.Tasks;
 
 namespace Designchallenge.Models
 {
-    public class Deals
+    public partial class Deal
     {
-        // Controleer of de naam van de eigenschap juist is
-        public int Id { get; set; }  // Dit moet precies zo zijn, geen spelfouten.
+        [JsonProperty("dealID")]
+        public long Id { get; set; }
+
         public string Header { get; set; }
+
+        [JsonProperty("title")]
         public string Name { get; set; }
+
+        [JsonProperty("costs")]
+        public long Costs { get; set; }
+
         public string Description { get; set; }
     }
 
